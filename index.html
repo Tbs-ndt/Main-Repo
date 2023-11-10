@@ -4,7 +4,6 @@
     <style>
         body {
             background-color: yellow;
-            background-image: url('black-patch.jpg');
             background-size: cover;
             background-blend-mode: multiply;
             color: black;
@@ -38,8 +37,21 @@
             max-width: 100%;
             height: auto;
         }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        .player-info {
+            margin-top: 20px;
+        }
     </style>
-    <title>Super Giants</title>
+    <title>Players - Super Giants</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -47,32 +59,27 @@
     <!-- Header Section -->
     <header>
         <h1>Welcome to Super Giants Soccer Club</h1>
-         <nav>
+        <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="coaches.html">Coaches</a></li>
                 <li><a href="players.html">Players</a></li>
                 <li><a href="management.html">Management</a></li>
             </ul>
         </nav>
-        <img src="/media/enskie/55BB612E489DB31E/Fb/Opera Snapshot_2023-10-16_090748_web.facebook.com.png" alt="Football Players Image">
+        <video autoplay loop muted>
+            <source src="/home/enskie/Downloads/stock-footage-vintage-footage-of-man-playing-soccer-with-boy.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
     </header>
 
-    <!-- Home Page -->
-    <section id="home">
-        <h2>Super Giants Soccer Club</h2>
-        <p>Find out more about our coaches, players, and management.</p>
-    </section>
+    <!-- Players Page Content -->
+    <section>
+        <h1>Players</h1>
+        <div class="player-info">
+            <img src="/media/enskie/55BB612E489DB31E/Fb/file (1).jpg" alt="Tobias" width="300" height="400">
+            <p>Name: Tobias</p>
+            <p>Position: CDM</p>
+        </
 
-    <!-- JavaScript for smooth scrolling -->
-    <script>
-        document.querySelector('a[href="#home"]').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector('#home').scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    </script>
-</body>
-</html>
-
+            
