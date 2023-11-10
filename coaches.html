@@ -2,18 +2,13 @@
 <html lang="en">
 <head>
     <style>
-        text-align: center;
-        padding: 20px;
         body {
-            background-color: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
-box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
-}
-
-;
+            background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+            box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
             background-image: url('/media/enskie/55BB612E489DB31E/Fb/Opera Snapshot_2023-10-16_090748_web.facebook.com.png');
             background-size: cover;
             background-blend-mode: multiply;
-            color: Yellow;
+            color: #e6af2e; /* Dark yellow color */
             margin: 0;
             overflow-x: hidden;
         }
@@ -43,6 +38,8 @@ box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
         img {
             max-width: 100%;
             height: auto;
+            display: block;
+            margin: 0 auto; /* Center align the image */
         }
 
         .coach-info {
@@ -90,10 +87,4 @@ box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
     <script>
         document.querySelector('a[href="#home"]').addEventListener('click', function (e) {
             e.preventDefault();
-            document.querySelector('#home').scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    </script>
-</body>
-</html>
+            document.querySelector('#home').scroll
