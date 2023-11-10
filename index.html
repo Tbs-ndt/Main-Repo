@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color: yellow;
+            background-image: url('black-patch.jpg');
+            background-size: cover;
+            background-blend-mode: multiply;
+            color: black;
+            overflow-x: hidden;
+        }
+
+        /* Add loading animation styles */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .loaded {
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+    <title>Super Giants</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Loading screen -->
+    <div class="loading-screen"></div>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Super Giants Soccer Club</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="coaches.html">Coaches</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="management.html">Management</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <section id="home">
+        <h2>Super Giants Soccer Club</h2>
+        <p>Find out more about our coaches, players, and management.</p>
+    </section>
+
+    <!-- JavaScript for smooth scrolling and loading animation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector('a[href="#home"]').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector('#home').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+
+            // Hide loading screen after the page has loaded
+            document.body.classList.add('loaded');
+            setTimeout(function () {
+                document.querySelector('.loading-screen').style.display = 'none';
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
