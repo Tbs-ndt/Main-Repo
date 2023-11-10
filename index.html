@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <style>
         body {
@@ -9,42 +8,47 @@
             background-size: cover;
             background-blend-mode: multiply;
             color: black;
+            margin: 0;
             overflow-x: hidden;
         }
 
-        /* Add loading animation styles */
-        .loading-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            opacity: 1;
-            transition: opacity 0.5s ease-in-out;
+        header {
+            text-align: center;
+            padding: 20px;
         }
 
-        .loaded {
-            opacity: 0;
-            pointer-events: none;
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
     <title>Super Giants</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
-    <!-- Loading screen -->
-    <div class="loading-screen"></div>
-
     <!-- Header Section -->
     <header>
         <h1>Welcome to Super Giants Soccer Club</h1>
+        <!-- Image with Football Players -->
+        <img src="/media/enskie/55BB612E489DB31E/Fb/Opera Snapshot_2023-10-16_090748_web.facebook.com.png" alt="Football Players Image">
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -61,23 +65,15 @@
         <p>Find out more about our coaches, players, and management.</p>
     </section>
 
-    <!-- JavaScript for smooth scrolling and loading animation -->
+    <!-- JavaScript for smooth scrolling -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelector('a[href="#home"]').addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector('#home').scrollIntoView({
-                    behavior: 'smooth'
-                });
+        document.querySelector('a[href="#home"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('#home').scrollIntoView({
+                behavior: 'smooth'
             });
-
-            // Hide loading screen after the page has loaded
-            document.body.classList.add('loaded');
-            setTimeout(function () {
-                document.querySelector('.loading-screen').style.display = 'none';
-            }, 500);
         });
     </script>
 </body>
-
 </html>
+
