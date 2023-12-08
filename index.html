@@ -3,11 +3,10 @@
 <head>
     <style>
         body {
-            background-color: yellow;
-            background-image: url('black-patch.jpg');
+            background-color: yellow and black;
             background-size: cover;
             background-blend-mode: multiply;
-            color: black;
+            color: yellow;
             margin: 0;
             overflow-x: hidden;
         }
@@ -38,8 +37,21 @@
             max-width: 100%;
             height: auto;
         }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        .player-info {
+            margin-top: 20px;
+        }
     </style>
-    <title>Super Giants</title>
+    <title>Players - Super Giants</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -49,31 +61,95 @@
         <h1>Welcome to Super Giants Soccer Club</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="coaches.html">Coaches</a></li>
                 <li><a href="players.html">Players</a></li>
                 <li><a href="management.html">Management</a></li>
             </ul>
         </nav>
-        <!-- Image with Football Players -->
-        <img src="/media/enskie/55BB612E489DB31E/Fb/Opera Snapshot_2023-10-16_090748_web.facebook.com.png" alt="Football Players Image">
-         </header>
+<<<<<<players
+        <video autoplay loop muted>
+            <source src="/home/enskie/Downloads/stock-footage-vintage-footage-of-man-playing-soccer-with-boy.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+  </header>
 
-    <!-- Home Page -->
-    <section id="home">
-        <h2>Super Giants Soccer Club</h2>
-        <p>Find out more about our coaches, players, and management.</p>
-    </section>
+    <!-- Players Page Content -->
+    <section>
+        <h1>Players</h1>
+        <div class="player-info">
+            <img src="/media/enskie/55BB612E489DB31E/Fb/file (1).jpg" alt="Kennedy" width="300" height="400">
+            <p>Name: Kennedy</p>
+            <p>Position: CDM<p>
+                <P>Age: 23 Years<p>
+                <p>Height: 5.9 Feet<p>
+                    <p>Other Preffered position(s):RW</p>
 
-    <!-- JavaScript for smooth scrolling -->
-    <script>
-        document.querySelector('a[href="#home"]').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector('#home').scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    </script>
-</body>
-</html>
+            <img src="/media/enskie/55BB612E489DB31E/Fb/New folder/IMG_E0729.JPG" alt="Tobias" width="300" height="400">
+            <p>Name: Tobias</p>
+            <p>Position:CM</p>
+            <p>Age:20 Years</p>
+            <p>Height: 5.4 feet</p>
+            <p>Other preffered positon(s): LWB</p>
+            
+            <img src="/media/enskie/55BB612E489DB31E/Fb/Opera Snapshot_2023-12-08_073837_www.facebook.com.png" alt="Mwanzia" width="300" height="400">
+            <p>Name: Emmanuel</p>
+            <p>Role: Captain</p>
+            <p>Position:CDM</p>
+            <p>Age:23 Years</p>
+            <p>Height: 5.4 feet</p>
+            <p>Other preffered positon(s): LW</p>
 
+            
+             <img src="/media/enskie/55BB612E489DB31E/Fb/Opera Snapshot_2023-12-08_075124_www.facebook.com.png" alt="Mwanzia" width="300" height="400">
+            <p>Name: Anthony</p>
+            <p>Position:CM</p>
+            <p>Age:23 Years</p>
+            <p>Height: 5.8 feet</p>
+            <p>Other preffered positon(s): AM</p>
+
+            <img src="/media/enskie/55BB612E489DB31E/Fb/Opera Snapshot_2023-12-08_075514_www.facebook.com.png" alt="Mwanzia" width="300" height="400">
+            <p>Name: Steve</p>
+            <p>Role:Asst. Captain</p>
+            <p>Position:CM</p>
+            <p>Age:29 Years</p>
+            <p>Height: 5.9 feet</p>
+            <p>Other preffered positon(s): RW</p>
+
+             <img src="/media/enskie/55BB612E489DB31E/Fb/Opera Snapshot_2023-12-08_075834_www.facebook.com.png" alt="Mwanzia" width="300" height="400">
+            <p>Name: Tony</p>
+            <p>Position:CF</p>
+            <p>Age:19 Years</p>
+            <p>Height: 5.4 feet</p>
+            <p>Other preffered positon(s):AM</p>
+
+              <img src="/media/enskie/55BB612E489DB31E/Fb/Opera Snapshot_2023-12-08_080135_www.facebook.com.png" alt="Mwanzia" width="300" height="400">
+            <p>Name: Nicholas</p>
+            <p>Position:CB</p>
+            <p>Age:25 Years</p>
+            <p>Height: 5.4 feet</p>
+            <p>Other preffered positon(s):RB</p>
+
+              <img src="/media/enskie/55BB612E489DB31E/Fb/Opera Snapshot_2023-12-08_080614_www.facebook.com.png" alt="Mwanzia" width="300" height="400">
+            <p>Name: Tush</p>
+            <p>Position:GoalKeeper</p>
+            <p>Age:25 Years</p>
+            <p>Height: 5.5 feet</p>
+            <p>Other preffered positon(s):RB</p>
+
+             <img src="/media/enskie/55BB612E489DB31E/Fb/Opera Snapshot_2023-12-08_080903_www.facebook.com.png" alt="Mwanzia" width="300" height="400">
+            <p>Name: Mutinda</p>
+            <p>Position:RW</p>
+            <p>Age:25 Years</p>
+            <p>Height: 5.5 feet</p>
+            <p>Other preffered positon(s):CF</p>
+            
+             <img src="/media/enskie/55BB612E489DB31E/Fb/Opera Snapshot_2023-12-08_081200_www.facebook.com.png" alt="Mwanzia" width="300" height="400">
+            <p>Name: Fidel</p>
+            <p>Position:CB</p>
+            <p>Age:18 Years</p>
+            <p>Height: 5.6feet</p>
+            <p>Other preffered positon(s):CDM</p>
+            </section>
+            
+          
